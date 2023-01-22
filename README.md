@@ -15,7 +15,5 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-1. flutter pub get 
-#� �F�l�u�t�t�e�r�-�P�o�l�i�c�e�-�S�t�a�t�i�o�n�-�-�-�U�p�d�a�t�e�d�
-�
-�
+Just do this:
+1. flutter pub get - to install the packages in the flutter
