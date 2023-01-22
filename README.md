@@ -1,6 +1,6 @@
 # Flutter Police System 
 
-A Flutter project that is a LAN based software in process.
+A Flutter project that is a LAN based software still in process.
 
 ## Getting Started
 
