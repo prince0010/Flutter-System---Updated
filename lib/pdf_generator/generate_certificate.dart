@@ -295,11 +295,52 @@ void generatePdf(
                               ),
                             ),
                             generateRow(
-                                label: 'Amount Paid',
-                                value: 'Php ${details.payment.payment}'),
+                              label: 'Amount Paid',
+                              value: 'Php ${details.payment.payment}',
+                            ),
                           ],
                         ),
                       ),
+                      //Signature of 2 Police
+                      Container(
+                        padding: const EdgeInsets.all(20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          //Trying Crossaxisalignment.end to put the police name to the vertical bottom
+                          // crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Column(
+                              children: [
+                                Image(
+                                  signature,
+                                  width: PdfPageFormat.inch,
+                                  height: 30,
+                                  fit: BoxFit.cover,
+                                ),
+                                Container(
+                                  width: PdfPageFormat.inch,
+                                  height: PdfPageFormat.inch,
+                                  decoration: const BoxDecoration(
+                                    border: Border(
+                                      top: BorderSide(width: 1),
+                                    ),
+                                  ),
+                                  padding: const EdgeInsets.only(top: 5),
+                                  child: Text(
+                                    'First Police Signature',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      fontSize: 8,
+                                      color: PdfColor.fromHex('0000FF'),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      //End of 2 police signature
                       Column(
                         children: [
                           Container(
