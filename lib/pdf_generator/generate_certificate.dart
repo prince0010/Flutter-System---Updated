@@ -312,29 +312,33 @@ void generatePdf(
                               children: [
                                 Container(
                                   width: PdfPageFormat.inch,
-                                  height: PdfPageFormat.inch,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      width: 0.5,
-                                    ),
-                                  ),
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "First Police Signature and it's name below",
-                                      style: TextStyle(
-                                        color: PdfColor.fromHex('0000FF'),
-                                        fontStyle: FontStyle.italic,
-                                        fontSize: 7,
+                                  child: Column(
+                                    children: [
+                                      Image(
+                                        signature,
+                                        width: PdfPageFormat.inch,
+                                        height: 30,
+                                        fit: BoxFit.cover,
                                       ),
-                                    ),
+                                      Container(
+                                        width: PdfPageFormat.inch,
+                                        height: PdfPageFormat.inch,
+                                        decoration: const BoxDecoration(
+                                          border:
+                                              Border(top: BorderSide(width: 1)),
+                                        ),
+                                        padding: const EdgeInsets.only(top: 5),
+                                        child: Text(
+                                          'SIGNATURE',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: 8,
+                                            color: PdfColor.fromHex('0000FF'),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ),
-                                Image(
-                                  signature,
-                                  width: PdfPageFormat.inch,
-                                  height: 30,
-                                  fit: BoxFit.cover,
                                 ),
                                 SizedBox(height: 10),
                               ],
