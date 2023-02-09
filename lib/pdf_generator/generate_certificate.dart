@@ -313,8 +313,6 @@ void generatePdf(
                                 Container(
                                   width: PdfPageFormat.inch,
                                   child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
                                     children: [
                                       Image(
                                         signature,
@@ -322,31 +320,61 @@ void generatePdf(
                                         height: 30,
                                         fit: BoxFit.cover,
                                       ),
-                                      Image(
-                                        signature,
+                                      Container(
                                         width: PdfPageFormat.inch,
-                                        height: 30,
-                                        fit: BoxFit.cover,
+                                        height: PdfPageFormat.inch,
+                                        decoration: const BoxDecoration(
+                                          border:
+                                              Border(top: BorderSide(width: 1)),
+                                        ),
+                                        padding: const EdgeInsets.only(top: 5),
+                                        child: Text(
+                                          '1st police signature',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: 8,
+                                            color: PdfColor.fromHex('0000FF'),
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
-                                  //  Container(
-                                  //       width: PdfPageFormat.inch,
-                                  //       height: PdfPageFormat.inch,
-                                  //       decoration: const BoxDecoration(
-                                  //         border:
-                                  //             Border(top: BorderSide(width: 1)),
-                                  //       ),
-                                  //       padding: const EdgeInsets.only(top: 5),
-                                  //       child: Text(
-                                  //         '1st PoliceSIGNATURE',
-                                  //         textAlign: TextAlign.center,
-                                  //         style: TextStyle(
-                                  //           fontSize: 8,
-                                  //           color: PdfColor.fromHex('0000FF'),
-                                  //         ),
-                                  //       ),
-                                  //     ),
+                                ),
+                                //2nd police name and signature
+                                Column(
+                                  children: [
+                                    Container(
+                                      child: Column(
+                                        children: [
+                                          Image(
+                                            signature,
+                                            width: PdfPageFormat.inch,
+                                            height: 30,
+                                            fit: BoxFit.cover,
+                                          ),
+                                          Container(
+                                            width: PdfPageFormat.inch,
+                                            height: PdfPageFormat.inch,
+                                            decoration: const BoxDecoration(
+                                              border: Border(
+                                                  top: BorderSide(width: 1)),
+                                            ),
+                                            padding:
+                                                const EdgeInsets.only(top: 5),
+                                            child: Text(
+                                              '2nd Police Signature',
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                fontSize: 8,
+                                                color:
+                                                    PdfColor.fromHex('0000FF'),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
                                 ),
                                 SizedBox(height: 10),
                               ],
