@@ -1,17 +1,13 @@
-# Flutter Police System 
 
-A Flutter project that is a LAN based software still in process.
+![Flutter](https://user-images.githubusercontent.com/97717613/234001864-a6618236-3d0a-43f3-96cf-fcde9ef8dee3.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Flutter Community
+**Flutter content**
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Packages
+To go along with the packages, we have started a Medium publication as a central location for the content to be published - especially if it relates to the packages here.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+https://pub.dev
