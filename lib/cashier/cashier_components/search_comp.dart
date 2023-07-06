@@ -22,7 +22,7 @@ class ItemPager {
     List<Item> batch = [];
 
     for (int i = 0; i < pageSize; i++) {
-      batch.add(Item(title: 'Item ${pageIndex * pageSize + i}'));
+      batch.add(Item(title: 'Items ${pageIndex * pageSize + i}'));
     }
 
     pageIndex += 1;
