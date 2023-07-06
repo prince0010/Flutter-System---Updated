@@ -12,10 +12,10 @@ class _Confirm_ButtonState extends State<Confirm_Button> {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton.extended(
-      backgroundColor: const Color(0xff03dac6),
+      backgroundColor: const Color(0xff03dec6),
       foregroundColor: Colors.black,
       onPressed: () {
-        print('Confirmed');
+        print('Confirmed ');
       },
       icon: Icon(Icons.add),
       label: Text('Confirm'),
