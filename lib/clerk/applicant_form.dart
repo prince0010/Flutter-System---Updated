@@ -161,7 +161,7 @@ class _ApplicantFormState extends State<ApplicantForm> {
       addPccd({
         "pcc_id": pccId.toString(),
         "applicant_id": applicantId.toString(),
-        "purpose_id": selectedPurpose.toString(),
+        "purposes_id": selectedPurpose.toString(),
         "ctc_id": ctcId.toString(),
         "police_id": "1",
         "oic_id": "1",
@@ -195,8 +195,8 @@ class _ApplicantFormState extends State<ApplicantForm> {
         "first_name": firstNameCtrl.text,
         "middle_name": middleNameCtrl.text,
         "last_name": lastNameCtrl.text,
-        "contact_no": contactCtrl.text,
         "date_of_birth": '${rawDate[2]}-${rawDate[0]}-${rawDate[1]}',
+        "contact_no": contactCtrl.text,
         "place_of_birth": placeOfBirthCtrl.text,
         "civil_status": selectcs,
         "height": heightCtrl.text,
