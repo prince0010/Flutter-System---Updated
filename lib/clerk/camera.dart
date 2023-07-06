@@ -56,7 +56,7 @@ class _CameraState extends State<Camera> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Take a picture'),
+        title: const Text('Take picture'),
       ),
       body: Center(),
     );
