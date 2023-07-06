@@ -69,7 +69,7 @@ class _PaymentFormState extends State<PaymentForm> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 18),
                   Row(
                     children: [
                       Expanded(
@@ -88,7 +88,7 @@ class _PaymentFormState extends State<PaymentForm> {
                           },
                         ),
                       ),
-                      const SizedBox(width: 16),
+                      const SizedBox(width: 18),
                       Expanded(
                         child: TextFormField(
                           controller: paymentCtrl,
@@ -107,7 +107,7 @@ class _PaymentFormState extends State<PaymentForm> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 18),
                   Row(
                     children: [
                       ElevatedButton(
@@ -127,7 +127,7 @@ class _PaymentFormState extends State<PaymentForm> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 18),
                 ],
               ),
             ),
