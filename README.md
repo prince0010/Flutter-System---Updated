@@ -4,7 +4,7 @@
 
 # Flutter 
 
-* * A Flutter content**
+**A Flutter content**
 
 ---
 
