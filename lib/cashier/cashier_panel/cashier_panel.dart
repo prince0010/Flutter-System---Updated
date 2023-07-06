@@ -43,7 +43,7 @@ class _CashierPanelState extends State<CashierPanel> {
             icon: const Icon(Icons.logout),
             label: const Text("Logout"),
             style: ElevatedButton.styleFrom(
-              textStyle: const TextStyle(fontSize: 15),
+              textStyle: const TextStyle(fontSize: 18),
             ),
           ),
         ],
@@ -69,13 +69,13 @@ class _CashierPanelState extends State<CashierPanel> {
         width: double.infinity,
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 22),
             child: DataTable(
-              horizontalMargin: 10,
-              columnSpacing: 10,
+              horizontalMargin: 12,
+              columnSpacing: 12,
               columns: const [
                 DataColumn(
-                  label: Text("ID"),
+                  label: Text("Id"),
                 ),
                 DataColumn(
                   label: Text("First Name"),
