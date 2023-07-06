@@ -11,7 +11,7 @@ class Payment {
   final String or_number;
   final String payment;
 
-  //This is for the selection checkbox list in datatable
+  //This is for the selection checkbox list in Data Table
   bool selected = false;
 
   Payment({required this.id, required this.or_number, required this.payment});
